@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List </title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: xxx-large;
+            font-family: 'Times New Roman', Times, serif;
+            font-display: ;
+
+        }
+        body {
+            background-image: url(https://wallpapercave.com/wp/wp7606389.jpg);
+            color: rgb(179, 179, 179);
+        }
+        .todo-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            font-family: cursive;
+            font-size: x-large
+
+
+        }
+        .task {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            border: 2px solid rgba(255,255,255,.2);
+            backdrop-filter: blur(20px);
+            padding: 1em;
+            margin: 10px 50px 20px;
+            background-color: #f8f4f4;
+        }
+        .task .task-title {
+            flex-grow: 3;
+        }
+        .high-priority {
+            background-color: transparent;
+        }
+        .medium-priority {
+            background-color:  transparent;
+        }
+        .low-priority {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <div class="task high-priority">
+            <div class="task-title">
+            <div class="task-title">high-priority</div>
+                Task 1: create presentation
+            </div>
+            <div>
+                <span>Deadline: 2023-11-13 <br> 
+                    <label><input type="checkbox"> completed</label></br></span>
+            </div>
+        </div><div class="task high-priority">
+            <div class="task-title">
+            <div class="task-title">high-priority</div>
+                Task 2:  submit presentation
+            </div>
+            <div>
+                <span>Deadline: 2023-11-15 <br> 
+                    <label><input type="checkbox"> completed</label></br>
+                </span>
+            </div>
+        </div>
+        <div class="task medium-priority">
+            <div class="task-title">
+                <div class="task-title">medium-priority</div>
+                Task 3: prepare according to the presentation
+            </div>
+            <div>
+                <span>Deadline: 2023-11-20 <br> 
+                    <label><input type="checkbox"> completed</label></br></span>
+            </div>
+        </div>
+        <div class="task low-priority">
+            <div class="task-title">
+            <div class="task-title">low-priority</div>
+                  Task 4: present the content
+            </div>
+            <div>
+                <span>Deadline: Ongoing <br> 
+                    <label><input type="checkbox"> completed</label></br></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
